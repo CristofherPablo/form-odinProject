@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Norse Bold";
+    src:local("Norse Bold"), url("assets/fonts/Norse-Bold.otf");
+}
+
 html,
 body{
     border: 0;
@@ -6,4 +11,67 @@ body{
     font-size: 16px;
 }
 
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.container .sideBar{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url("assets/ashe-walker-gnGNTCBCCVA-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.container .sideBar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    margin-top: 25vh;
+    color: aliceblue;
+    font-family: "Norse Bold";
+}
+
+.container .sideBar .logo img{
+    max-width: 95px;
+}
+
+.container .sideBar .logo p{
+    font-size: 6rem;
+}
+
+.container .sideBar .sideBar-footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.container .sideBar .sideBar-footer{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container .sideBar .sideBar-footer a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.container .sideBar .sideBar-footer a:hover{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+.container .form-area{
+    flex: 2;
+}
 
