@@ -16,6 +16,7 @@ body{
     height: 100vh;
 }
 
+/* Setting up the side bar  */
 .container .sideBar{
     flex: 1;
     display: flex;
@@ -71,13 +72,21 @@ body{
     color: rgba(0, 0, 0, 0.5);
     text-decoration: underline;
 }
+
+/* Setting up the form area */
+
 .container .form-area{
     flex: 2;
     display: flex;
     align-items: center;
+    background-color: #f9fafb;
 }
 
-.container .form-area form > p{
+.container .form-area form{
+    width: 100%;
+}
+
+.container .form-area .information p{
     font-size:1.5rem;
     font-weight: bold;
     padding-left: 40px;
@@ -88,11 +97,68 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-grow: 1;
-    margin: 0;
-    height: 260px;
-    padding-left: 40px;
+    padding: 10px 0px 30px 40px;
+    background-color: white;
+    border: none;
+    margin: 50px 0;
+    box-shadow: 5px 5px 13px 0px rgba(44, 44, 44, 0.15);
 }
 
+.container .form-area form fieldset p{
+    width: 100%;
+    font-size:1.5rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
 
+.container .form-area form fieldset .inputWrapper{
+    margin-right: 40px;
+}
 
+.container .form-area form fieldset .inputWrapper .inputSet{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: .6rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif ;
+    font-weight: bold;
+    margin-top: 20px;
+    color: rgb(105, 104, 104);
+}
+
+.container .form-area form fieldset .inputWrapper .inputSet input{
+    padding: 7px;
+}
+
+.container .form-area form button{
+    margin-left: 40px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d27201;
+    color: #f9fafb;
+    font-size: 1rem;
+    box-shadow: 5px 5px 13px 0px rgba(44, 44, 44, 0.15);
+    transition: .2s;
+}
+
+.container .form-area form button:hover{
+    background-color: #f08d1b;
+}
+
+.container .form-area form p{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.container .form-area form p a{
+    text-decoration: none;
+    color: #d27201;
+}
+
+.container .form-area form p a:hover{
+    color: #f08d1b;
+    text-decoration: underline;
+}
