@@ -73,5 +73,26 @@ body{
 }
 .container .form-area{
     flex: 2;
+    display: flex;
+    align-items: center;
 }
+
+.container .form-area form > p{
+    font-size:1.5rem;
+    font-weight: bold;
+    padding-left: 40px;
+    max-width: 700px;
+}
+
+.container .form-area form fieldset{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 0;
+    height: 260px;
+    padding-left: 40px;
+}
+
+
 
