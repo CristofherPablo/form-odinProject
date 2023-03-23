@@ -39,37 +39,42 @@
             <div class="inputWrapper">
               <div class="inputSet">
                 <label for="first name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name" />
+                <input type="text" id="first-name" name="first-name" minlength="3" maxlength="15" placeholder="Jhon" required/>
               </div>
 
               <div class="inputSet">
                 <label for="email">EMAIL</label>
-                <input type="email" id="first-name" name="email" />
+                <input type="email" id="first-name" name="email" placeholder="jhonconnor@email.com " required/>
               </div>
 
               <div class="inputSet">
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" />
+                <input type="password" id="password" name="password" placeholder=" "
+                minlength="6"
+                required/>
               </div>
             </div>
 
             <div class="inputWrapper">
               <div class="inputSet">
                 <label for="last name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name" />
+                <input type="text" id="last-name" name="last-name" minlength="3" maxlength="15" placeholder="connor" required/>
               </div>
 
               <div class="inputSet">
                 <label for="phone">PHONE NUMBER</label>
-                <input type="text" id="phone-number" name="phone-number" />
+                <input type="tel" id="phone-number" name="phone-number" pattern="^(\((\d{3})\)|(\d{3}))-?(\d{3})-?(\d{4})$" placeholder=" " required/>
               </div>
 
               <div class="inputSet">
                 <label for="confirm password">CONFIRM PASSWORD</label>
                 <input
-                  type="text"
+                  type="password"
                   id="confirm-password"
                   name="confirm-password"
+                  placeholder=" "
+                  minlength="6"
+                  required
                 />
               </div>
             </div>

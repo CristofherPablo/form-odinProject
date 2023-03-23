@@ -162,3 +162,16 @@ body{
     color: #f08d1b;
     text-decoration: underline;
 }
+
+/* Styling the form validation colors */
+ input:valid{
+    border: 2px solid rgb(49, 100, 202);
+ }
+
+ input:invalid:not(:placeholder-shown){
+    border: 2px solid red;
+ }
+
+ input:placeholder-shown{
+    color: #000;
+ }
